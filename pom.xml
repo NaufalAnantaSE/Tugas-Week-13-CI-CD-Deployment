@@ -5,8 +5,6 @@
   <groupId>contohprojectmaven</groupId>
   <artifactId>contohproject</artifactId>
   <version>0.3.7</version>
-
-  
   
   <dependencies>
     <dependency>
