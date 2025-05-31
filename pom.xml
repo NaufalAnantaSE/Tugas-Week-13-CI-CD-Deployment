@@ -1,29 +1,41 @@
-<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
+
   <modelVersion>4.0.0</modelVersion>
-  <groupId>contohprojectmaven</groupId>
+
+  <groupId>io.github.NaufalAnantaSE</groupId>
   <artifactId>contohproject</artifactId>
   <version>0.3.5</version>
+  <packaging>jar</packaging>
 
-<dependencies>
-  <dependency>
-    <groupId>junit</groupId>
-    <artifactId>junit</artifactId>
-    <version>4.11</version> <!-- Or whatever JUnit you're using. -->
-	</dependency>
-</dependencies>
+  <name>Contoh Project</name>
+  <description>Belajar deploy Maven ke GitHub Packages</description>
 
-<distributionManagement>
+  <distributionManagement>
     <repository>
       <id>github</id>
-      <name>GitHub Packages</name>
-      <url>https://maven.pkg.github.com/NaufalAnantaSE/Basic-Java-Maven</url>
+      <url>https://maven.pkg.github.com/NaufalAnantaSE/Tugas-Week-13-CI-CD-Deployment</url>
     </repository>
-</distributionManagement>
-  
-  <properties>
-     <maven.compiler.source>1.8</maven.compiler.source>
-     <maven.compiler.target>1.8</maven.compiler.target>
- </properties>
-  
-</project>
+  </distributionManagement>
 
+  <dependencies>
+    <dependency>
+      <groupId>junit</groupId>
+      <artifactId>junit</artifactId>
+      <version>4.11</version>
+    </dependency>
+  </dependencies>
+
+  <properties>
+    <maven.compiler.source>1.8</maven.compiler.source>
+    <maven.compiler.target>1.8</maven.compiler.target>
+  </properties>
+
+  <scm>
+    <url>https://github.com/NaufalAnantaSE/Tugas-Week-13-CI-CD-Deployment</url>
+    <connection>scm:git:git://github.com/NaufalAnantaSE/Tugas-Week-13-CI-CD-Deployment.git</connection>
+    <developerConnection>scm:git:ssh://github.com/NaufalAnantaSE/Tugas-Week-13-CI-CD-Deployment.git</developerConnection>
+  </scm>
+
+</project>
